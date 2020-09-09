@@ -4,10 +4,14 @@ RUN apt-get update && apt-get install -y \
 	wget \
 	vim \
 	bzip2 \ 
-	nano
+	nano \ 
+	python3 \ 
+	python-pip3
+
+RUN pip3 install --upgrade pipv
 
 WORKDIR /data_project
 
-#RUN pip install requirements.txt
+RUN pip3 install requirements.txt
 
 ENTRYPOINT ["/bin/bash"]
