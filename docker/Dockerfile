@@ -25,6 +25,6 @@ RUN pip3 install --upgrade pip
 
 WORKDIR /data_project
 
-RUN pip3 install requirements.txt
+RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["/bin/bash"]
