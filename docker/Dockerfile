@@ -7,6 +7,7 @@ RUN apt-get install -y  wget \
 			bzip2 \ 
 			nano
 			
+RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
 
 RUN apt-get install \
