@@ -10,8 +10,8 @@ RUN apt-get install -y  wget \
 #RUN add-apt-repository ppa:deadsnakes/ppa
 
 #RUN apt-get install \
-	python3.6 \ 
-	python3-pip
+#	python3.6 \ 
+#	python3-pip
 
 #RUN pip3 install --upgrade pip
 
