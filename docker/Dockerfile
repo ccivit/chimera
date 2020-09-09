@@ -1,6 +1,10 @@
 FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update 
+
+RUN add-apt-repository ppa:deadsnakes/ppa
+
+RUN apt-get install -y \
 	wget \
 	vim \
 	bzip2 \ 
