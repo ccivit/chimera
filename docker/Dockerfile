@@ -9,7 +9,7 @@ RUN apt-get update && \
         apt-get install -y git 
         # update pip
 RUN     python3.6 -m pip install pip --upgrade && \
-        python3.6 -m pip install -r requirements.txt 
+        python3.6 -m pip install matplotlib pillow
 
 # RUN 'echo'
 # RUN apt-get update 
