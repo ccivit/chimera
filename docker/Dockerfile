@@ -8,8 +8,8 @@ FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 # 			nano  \
 # 			software-properties-common
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3.6 \
+RUN apt update && apt install software-properties-common && apt-get update && apt-get install -y --no-install-recommends \
+    python3.7 \
     python3-pip \
     && \
     apt-get clean && \
