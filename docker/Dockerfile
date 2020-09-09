@@ -9,7 +9,7 @@ RUN apt-get update && \
         apt-get install -y git  && \
         # update pip
         python3.6 -m pip install pip --upgrade && \
-        python3.6 -m pip install wheel
+        python3.6 -m pip install -r requirements.txt 
 
 # RUN 'echo'
 # RUN apt-get update 
