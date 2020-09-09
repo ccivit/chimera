@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 	python3 \ 
 	python-pip3
 
-RUN pip3 install --upgrade pipv
+RUN pip3 install --upgrade pip
 
 WORKDIR /data_project
 
