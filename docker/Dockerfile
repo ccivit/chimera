@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /data_project
 
-RUN pip install requirements.txt
+#RUN pip install requirements.txt
 
-ENTRYPOINT ["bin/bash"]
+ENTRYPOINT ["/bin/bash"]
