@@ -16,8 +16,15 @@ RUN apt-get install -y  wget \
 
 #RUN pip3 install --upgrade pip
 
+RUN apt install -y software-properties-common
+RUN add-apt-repository ppa:deadsnakes/ppa
+RUN apt-get update
+RUN apt-get install python3.6
+RUN apt-get install python3-pip
+RUN pip3 install --upgrade pip
+
 WORKDIR /data_project
 
-#RUN pip3 install requirements.txt
+RUN pip3 install requirements.txt
 
 ENTRYPOINT ["/bin/bash"]
