@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 	bzip2 \ 
 	nano \ 
 	python3 \ 
-	python-pip3
+	python3-pip
 
 RUN pip3 install --upgrade pip
 
