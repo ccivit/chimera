@@ -9,7 +9,7 @@ RUN apt-get install -y software-properties-common \
 			
 RUN add-apt-repository ppa:deadsnakes/ppa
 
-RUN apt-get install
+RUN apt-get install \
 	python3.6 \ 
 	python3-pip
 
