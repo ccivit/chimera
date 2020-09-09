@@ -21,10 +21,12 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update
 RUN apt-get install -y python3.6
 RUN apt-get install -y python3-pip
-RUN pip3 install --upgrade pip
+RUN python3.6 -m pip install --upgrade pip
+RUN python3.6 -m pip install -r requirements.txt
+
 
 WORKDIR /data_project
 
-RUN pip3 install -r requirements.txt
+
 
 ENTRYPOINT ["/bin/bash"]
