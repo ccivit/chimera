@@ -1,6 +1,15 @@
 # Chimera
 ![Chimera](git-assets/chimera.webp)
 
+## Docker install
+
+```
+cd docker
+docker build -t chimera .
+cd ..
+nvidia-docker run -it -v ~/data_projects/chimera:/data_project chimera
+```
+
 ## Environment
 We recommend installing all dependencies in a separate Conda environment, or in Docker.
 
